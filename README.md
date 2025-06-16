@@ -56,7 +56,7 @@ These slicers allow users to explore flight prices dynamically across different 
 
 ## 📷 Dashboard Screenshot
 
-![Flight Prices Dashboard](./1073fee8-e883-4e3d-a24b-a787ea277d44.png)
+![Flight Prices Dashboard](./Flight Prices Dashboard.png)
 
 ---
 
