@@ -20,7 +20,6 @@ all_results = []
 
 for dest in destinations:
     for month in months:
-        print(f"\n📡 Fetching TLV → {dest} for {month}...")
         querystring = {
             "fromEntityId": from_entity,
             "toEntityId": dest,
@@ -60,12 +59,12 @@ for dest in destinations:
                             continue
 
         except Exception as e:
-            print(f"❌ Failed to process {dest} - {month}: {e}")
+            print(f"Failed to process {dest} - {month}: {e}")
 
 # === Save to Excel ===
 if all_results:
     df = pd.DataFrame(all_results)
     df.to_excel("flights_TLV_multi_dest.xlsx", index=False)
-    print("\n✅ Excel file created: flights_TLV_multi_dest.xlsx")
+    print("\nExcel file created: flights_TLV_multi_dest.xlsx")
 else:
-    print("\n🚫 No data was retrieved.")
+    print("\nNo data was retrieved.")
